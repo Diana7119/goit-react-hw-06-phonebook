@@ -7,10 +7,10 @@ import { Form, Input, Label, SubmitButton } from './ContactForm.styled';
 
 export const ContactForm = () => {
   const dispatch = useDispatch(); 
-  const contacts = useSelector(getContacts);
+  const contacts = useSelector(getContacts); 
 
   const handleSubmit = event => {
-    event.preventDefault();
+    event.preventDefault(); 
 
     
     const contact = {
@@ -19,7 +19,7 @@ export const ContactForm = () => {
       number: event.currentTarget.elements.number.value,
     };
 
-    
+   
     const isExist = contacts.find(
       ({ name }) => name.toLowerCase() === contact.name.toLowerCase() 
     );

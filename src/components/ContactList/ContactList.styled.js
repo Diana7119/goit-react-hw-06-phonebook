@@ -7,6 +7,7 @@ export const List = styled.ul`
 export const Item = styled.li`
   padding-left: 5px;
   font-size: 17px;
+  list-style: none;
 
   &:not(:last-child) {
     margin-bottom: 15px;
